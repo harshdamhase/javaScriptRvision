@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sayhello(name, age) {
+            document.write("hello " + name + ":  " + "age" + age);
+        }
+        sayhello("pari", 10);
+        document.write("<br/>");
+
+        function add(name, age) {
+            document.write(`my name is ${name} and age ${age}`);
+        }
+        add("harshda", 23);
+        document.write("<br/>");
+
+        //function with return type
+        function clas(num) {
+            let sum = num + num;
+            return sum;
+        }
+        let a = clas(10);
+        document.write(a);
+
+        //function with no return type
+
+        function area(n) {
+            let result = n * n;
+            document.write(`square area is ${n}`);
+        }
+        area(10);
+
+        //no argument but return 
+        const s = 2;
+        function squ() {
+            let area = s * s;
+            return area;
+        }
+        let sqy = squ();
+        document.write(sqy);
+
+
+        //no argument no return
+
+        const n2=100;
+        function result()
+        {
+let addd=n2 +n2;
+document.write(addd);
+        }
+        result();
+    </script>
+</body>
+
+</html>
