@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+   
 <body>
-
+    
+    <h1>Sum of two numbers</h1>
+         
+    Enter value1: <input type="text" id="val1" /> <br /><br />
+    
+    Enter value2: <input type="text" id="val2" /> <br /><br />
+     
+    <button onclick="calculatesum()">Calcualte sum</button>
+     
+    <button onclick="resetnum()" id="ans">Reset sum</button>
+         
     <script>
-        const student = [
-            {
+               
+        const num1 = document.getElementById('val1');
+        const num2 = document.getElementById('val2');
+        const reset = document.getElementById('ans');
+          
+        function calculatesum() {
+            const input1 = parseInt(num1.value);
+            const input2 = parseInt(num2.value);
+            sum = input1 + input2;
+            console.log(sum);
+        }
         
-            "name": "harshda",
-            },
-            {
-            "age": 22
-            },
-            {
-        "email":"abc@gmail.com"
-        }]
-        console.log(student);
+        
+        function resetnum() {
+            ans.innerText;
+            ans1 = '';
+        }
 
 
     </script>
 </body>
 
 </html>
+
+
+
+
